@@ -2,6 +2,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+**Authors:** Mukunda Hosangadi, Sumedh Kudale, Ganesh
+
+_This project was developed as part of our Digital Image Processing (DIP) course._
+
 ## Description
 
 This repository provides code for automated segmentation of HeLa cells and their nuclei from Serial Block-Face Scanning Electron Microscopy (SBF-SEM) images, using a hybrid approach combining MATLAB image processing and Python-based Deep Learning (U-Net).
@@ -18,21 +22,21 @@ The project uses a 300-image SBF-SEM stack. The original data and ground truth m
 
 ## Repository Structure
 
--   `cell_segmentation/`: Contains preprocessing and U-Net training/evaluation code.
--   `nucleus_segmentation/`: Contains nucleus segmentation MATLAB code.
--   `cell_segmentation_results/`: (Output) Cell masks from U-Net.
--   `nucleus_segmentation_results/`: (Output) Nucleus masks from MATLAB pipeline.
--   `Research Paper.pdf`: Detailed analysis and results.
--   `LICENSE`: MIT License.
--   `README.md`: This file.
+- `cell_segmentation/`: Contains preprocessing and U-Net training/evaluation code.
+- `nucleus_segmentation/`: Contains nucleus segmentation MATLAB code.
+- `cell_segmentation_results/`: (Output) Cell masks from U-Net.
+- `nucleus_segmentation_results/`: (Output) Nucleus masks from MATLAB pipeline.
+- `Research Paper.pdf`: Detailed analysis and results.
+- `LICENSE`: MIT License.
+- `README.md`: This file.
 
 ## Requirements
 
--   **MATLAB:** R2022b or similar, with Image Processing Toolbox (v24.2+ recommended).
--   **Python 3.x:** TensorFlow/Keras, NumPy, OpenCV, Matplotlib, Albumentations, Scikit-learn, Pandas, Jupyter.
-    ```bash
-    pip install tensorflow numpy opencv-python matplotlib albumentations scikit-learn pandas jupyterlab
-    ```
+- **MATLAB:** R2022b or similar, with Image Processing Toolbox (v24.2+ recommended).
+- **Python 3.x:** TensorFlow/Keras, NumPy, OpenCV, Matplotlib, Albumentations, Scikit-learn, Pandas, Jupyter.
+  ```bash
+  pip install tensorflow numpy opencv-python matplotlib albumentations scikit-learn pandas jupyterlab
+  ```
 
 ## Usage
 
@@ -44,8 +48,8 @@ The project uses a 300-image SBF-SEM stack. The original data and ground truth m
 
 ## Results Summary
 
--   **Cell Segmentation (U-Net):** Mean Dice Score = 0.9781
--   **Nucleus Segmentation (IP):** Mean Dice Score = 0.9215
+- **Cell Segmentation (U-Net):** Mean Dice Score = 0.9781
+- **Nucleus Segmentation (IP):** Mean Dice Score = 0.9215
 
 Refer to `Research Paper.pdf` for detailed results.
 
